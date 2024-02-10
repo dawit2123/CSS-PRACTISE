@@ -34,13 +34,13 @@ a:link {
   text-decoration: none;
   margin-right: 10px;
 }
+a:visited {
+  color: #1098ad;
+}
 a:hover {
   color: #002df8;
   font-weight: bold;
-  text-decoration: underline dotted #002df8;
-}
-a:visited {
-  color: #1098ad;
+  text-decoration: underline #002df8;
 }
 a:active {
   background-color: rgb(34, 243, 226);
@@ -75,4 +75,28 @@ li p {
 }
 li a {
   font-weight: normal;
+}
+.post-img {
+  width: 800px;
+  height: auto;
+}
+aside {
+  background-color: rgba(224, 224, 224, 0.2);
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+.copyright {
+  font-size: 18px;
+}
+aside ul li {
+  list-style: none;
+}
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+aside {
+  width: 600px;
 }
