@@ -6,6 +6,18 @@
 /* adding a border in the top  */
 body {
   border-top: 10px solid #1098ad;
+  color: rgba(0, 0, 0, 0.74);
+  font-family: sans-serif;
+  font-size: 20px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-style: italic;
+}
+/* using the pseudo element in the h1 to select the first element */
+h1::first-letter {
+  font-style: normal;
 }
 /* centering the navigation */
 .navigation {
@@ -14,15 +26,17 @@ body {
   margin-right: auto;
   background-color: rgba(224, 224, 224, 0.2);
   padding: 20px 25px;
+  margin-bottom: 50px;
 }
 a:link {
   color: #1098ad;
   font-size: 20px;
   text-decoration: none;
-  margin-left: 20px;
+  margin-right: 10px;
 }
 a:hover {
   color: #002df8;
+  font-weight: bold;
   text-decoration: underline dotted #002df8;
 }
 a:visited {
@@ -52,4 +66,13 @@ p {
 }
 li {
   margin-left: 30px;
+}
+li:first-child {
+  font-weight: bold;
+}
+li p {
+  font-weight: bold;
+}
+li a {
+  font-weight: normal;
 }
