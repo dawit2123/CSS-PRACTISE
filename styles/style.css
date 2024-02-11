@@ -9,6 +9,7 @@ body {
   color: rgba(0, 0, 0, 0.74);
   font-family: sans-serif;
   font-size: 20px;
+  position: relative;
 }
 h1 {
   text-transform: uppercase;
@@ -99,4 +100,14 @@ h4 {
 }
 aside {
   width: 600px;
+}
+.like {
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid #00000083;
+  background-color: rgba(224, 224, 224, 0.2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
 }
