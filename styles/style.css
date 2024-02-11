@@ -55,6 +55,7 @@ h3 {
 }
 h2 {
   font-size: 40px;
+  position: relative;
 }
 /* centering all the div's */
 .container {
@@ -110,4 +111,13 @@ aside {
   bottom: 0;
   right: 0;
   cursor: pointer;
+}
+h2::after {
+  content: "TOP";
+  background-color: rgba(255, 255, 0, 0.808);
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.658);
+  position: absolute;
+  top: -10px;
+  right: -15px;
 }
