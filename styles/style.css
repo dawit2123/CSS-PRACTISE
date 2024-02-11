@@ -29,7 +29,7 @@ h1::first-letter {
   background-color: rgba(224, 224, 224, 0.2);
   padding: 20px 25px;
   margin-bottom: 50px;
-  height: 25px;
+  height: 55px;
 }
 
 a:link {
@@ -59,6 +59,7 @@ h3 {
 h2 {
   font-size: 40px;
   position: relative;
+  display: inline-block;
 }
 /* centering all the div's */
 .container {
@@ -89,7 +90,7 @@ aside {
   background-color: rgba(224, 224, 224, 0.2);
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  width: 550;
+  width: 700px;
 }
 .copyright {
   font-size: 18px;
@@ -103,9 +104,7 @@ h4 {
   margin-bottom: 10px;
   margin-top: 30px;
 }
-aside {
-  width: 300px;
-}
+
 .like {
   padding: 20px;
   font-size: 20px;
@@ -122,11 +121,11 @@ h2::after {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.658);
   position: absolute;
-  top: -10px;
-  right: -15px;
+  top: -20px;
+  right: -55px;
 }
-/* floats */
-article {
+/* Floats */
+/* article {
   width: 800px;
 }
 .navigation {
@@ -152,4 +151,32 @@ article {
 }
 .copyright {
   clear: both;
+} */
+/* Doing the blog post  layouts using FlexBox */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.related-post {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.related-post-detail {
+  padding-bottom: 35px;
+}
+.related-post-author {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
 }
