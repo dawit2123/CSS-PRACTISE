@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* adding a border in the top  */
 body {
@@ -28,7 +29,9 @@ h1::first-letter {
   background-color: rgba(224, 224, 224, 0.2);
   padding: 20px 25px;
   margin-bottom: 50px;
+  height: 25px;
 }
+
 a:link {
   color: #1098ad;
   font-size: 20px;
@@ -59,7 +62,7 @@ h2 {
 }
 /* centering all the div's */
 .container {
-  width: 800px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -86,6 +89,7 @@ aside {
   background-color: rgba(224, 224, 224, 0.2);
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  width: 550;
 }
 .copyright {
   font-size: 18px;
@@ -100,7 +104,7 @@ h4 {
   margin-top: 30px;
 }
 aside {
-  width: 600px;
+  width: 300px;
 }
 .like {
   padding: 20px;
@@ -120,4 +124,32 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -15px;
+}
+/* floats */
+article {
+  width: 800px;
+}
+.navigation {
+  text-align: center;
+}
+h1 {
+  float: left;
+  margin-top: -10px;
+}
+nav {
+  float: right;
+}
+nav::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+aside {
+  float: right;
+}
+article {
+  float: left;
+}
+.copyright {
+  clear: both;
 }
