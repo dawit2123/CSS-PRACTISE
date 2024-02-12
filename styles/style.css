@@ -11,6 +11,7 @@ body {
   font-family: sans-serif;
   font-size: 20px;
   position: relative;
+  line-height: 1.5;
 }
 h1 {
   text-transform: uppercase;
